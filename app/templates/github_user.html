@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+<!-- Content block -->
+{% block content %}
+<h2> This is {{user.username}}'s Profile</h2>
+
+<img src="{{user.avatar_url}}" alt="image">
+<hr>
+{{url}}
+<footer class="mastfoot mt-auto">
+    <div class="inner footer_main">
+      <p>view on github <a href="{{user.url}}">{{user.username}}</a></p>
+    </div>
+  </footer>
+{% endblock%}

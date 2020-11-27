@@ -1,7 +1,7 @@
 import os
 
 class Config:
-    pass
+    GITHUB_API_BASE_URl='https://api.github.com/users/{}'
 
 
 class ProdConfig(Config):
